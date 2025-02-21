@@ -21,4 +21,19 @@
    border: solid 1px var(--stroke-color);
    border-inline: none;
    justify-content: space-between;
+   overflow-x: scroll;
+   column-gap: 32px;
+   flex-wrap: nowrap;
+
+   & > div a{
+      white-space: nowrap;
+      
+   }
+}
+
+@media (width >=480px) {
+   #secondary {
+      overflow-x: hidden;
+      column-gap: 0;
+   }
 }
